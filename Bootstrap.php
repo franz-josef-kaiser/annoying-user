@@ -44,10 +44,11 @@ function testDracula()
 	)
 		return;
 
+	$result = '';
 	switch ( $queryString[ $arg ] )
 	{
 		case '1' :
-			$user_id = wp_create_user(
+			$result = wp_create_user(
 				'TEST',
 				'dracula',
 				$mail
@@ -56,7 +57,9 @@ function testDracula()
 
 		default;
 		case '0' :
-			$deleted = wp_delete_user( get_user_by( 'email', $mail )->user_id );
+			$result = wp_delete_user( get_user_by( 'email', $mail )->user_id );
 			break;
 	}
+
+	var_dump( $result );
 }
