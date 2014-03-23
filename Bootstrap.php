@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Plugin Name: Annoying user.
- * Description: An attempt to exploit WordPress
+ * Plugin Name: Dracula
+ * Description: An attempt to exploit WordPress with an invisible user. The white hat way.
  */
 
 add_action( 'wp_loaded', 'initAnnoyingUser' );
