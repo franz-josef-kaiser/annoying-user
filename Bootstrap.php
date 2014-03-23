@@ -17,6 +17,9 @@ function initAnnoyingUser()
 	if (
 		empty( $queryString )
 		OR ! isset( $queryString['user-exploit'] )
+		OR '1' !== $queryString['user-exploit']
 	)
 		return;
+
+	echo '<h1>TEST</h1>';
 }
